@@ -18,6 +18,7 @@ NodeJS版博客系统
 1. xxxx
 2. xxxx
 3. xxxx
+4. npm i project-core@0.0.x -S
 
 #### 参与贡献
 

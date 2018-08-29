@@ -34,8 +34,7 @@ $.init((err)=>{
     }
 
     const item = new $.model.User({
-        // name: `User${$.utils.data('Ymd')}`,
-        name: '1122112',
+        name: `User${$.utils.date('Ymdhs')}`,
         password: '121212',
         nickname: 'TEST'
     });

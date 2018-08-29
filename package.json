@@ -20,9 +20,13 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "mongoose": "^5.2.10",
+    "multiparty": "^4.2.1",
     "path": "^0.12.7",
     "process": "^0.11.10",
-    "project-core": "0.0.17"
+    "project-core": "0.0.17",
+    "serve-static": "^1.13.2"
   }
 }

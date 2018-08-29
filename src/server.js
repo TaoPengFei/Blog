@@ -1,7 +1,7 @@
 
 'use strict';
 
-import path from 'path'
+import path from 'path';
 import ProjectCore from 'project-core';
 
 const $ = global.$ = new ProjectCore();
@@ -22,6 +22,12 @@ $.init.add((done)=>{
 $.init.load(path.resolve(__dirname,'init','mongodb.js'));
 //加载Modles
 $.init.load(path.resolve(__dirname,'models'));
+
+//初始化Express
+$.init.load(path.resolve(__dirname,'init','express.js'));
+//加载Modles
+$.init.load(path.resolve(__dirname,'routes'));
+
 
 
 //初始化

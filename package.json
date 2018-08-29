@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm run clean && babel src -d target --watch",
     "compile": "npm run clean & babel src -d target",
-    "clean": "del target",
+    "clean": "del /Q /F target",
     "run": "npm run compile && node target/server.js"
   },
   "author": "TaoPengFei",

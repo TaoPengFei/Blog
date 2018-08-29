@@ -1,5 +1,6 @@
 module.exports = function (set, get, has) {
-    if (has("test")) {
+    set('db.mongodb','mongodb://127.0.0.1/Blog');
+    /*if (has("test")) {
 
-    }
+    }*/
 };

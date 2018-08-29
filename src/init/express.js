@@ -4,6 +4,10 @@ import bodyParser from 'body-parser';
 import path from 'path';
 
 module.exports = function (done) {
+
+    const debug = $.createDebug('初始化Express');
+    debug('路由生效..');
+
     const app = express();
 
     app.use(bodyParser.json());

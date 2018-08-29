@@ -11,7 +11,7 @@ const $ = global.$ = new ProjectCore();
 
 //创建Debug
 $.createDebug = function(name) {
-  return createDebug('my: ' + name);
+  return createDebug('Blog: ' + name);
 };
 
 const debug = $.createDebug('server');

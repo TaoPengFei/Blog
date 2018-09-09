@@ -33,6 +33,9 @@ $.init.load(path.resolve(__dirname,'init','mongodb.js'));
 //加载Modles
 $.init.load(path.resolve(__dirname,'models'));
 
+//加载methods
+$.init.load(path.resolve(__dirname,'methods'));
+
 //初始化Express
 $.init.load(path.resolve(__dirname,'init','express.js'));
 //加载Modles
@@ -49,11 +52,15 @@ $.init((err)=>{
         console.log("inited..." + $.env);
     }
 
-    const item = new $.model.User({
+    /*const item = new $.model.User({
         name: `User${$.utils.date('Ymdhs')}`,
         password: '121212',
+        email: '302665611@qq.com',
         nickname: 'TEST'
-    });
-    item.save(console.log);
+    });*/
+    // item.save(console.log);
+
+    require('./test');
 
 });
+
